@@ -10,15 +10,19 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
 public class UserManageServiceImpl implements UserManageService {
     private final UserManageRepo userManageRepo;
 
-    public Page<UserVO> selectUserList(UserVO userVO, Pageable pageable) throws Exception {
+    public Map<String, Object> selectUserList(UserVO userVO, Pageable pageable) throws Exception {
+        Map<String, Object> rsltMap = new HashMap<>();
         Page<UserVO> userList = userManageRepo.selectUserList(userVO, pageable);
-        return userList;
+        rsltMap.put("userList", userList);
+        return rsltMap;
     }
 
     public void insertUserProc(UserVO userVO) throws Exception {

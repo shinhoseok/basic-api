@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93c5602b-c617-4560-a303-40f1b0514b3c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootWar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootWar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/basic/api/config/BasicWebServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/basic/api/config/BasicWebServletContextListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/basic/api/controller/UserManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/basic/api/component/ResponseComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/basic/api/component/ResponseComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/basic/api/service/UserManageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/basic/api/service/UserManageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/basic/api/service/impl/UserManageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/basic/api/service/impl/UserManageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/basic/api/vo/CommonVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/basic/api/vo/CommonVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/basic/api/vo/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/basic/api/vo/UserVO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +45,11 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="basic" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="basic" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -283,7 +298,7 @@
       <workItem from="1682398433787" duration="1509000" />
       <workItem from="1682400954825" duration="3500000" />
       <workItem from="1682764283522" duration="38000" />
-      <workItem from="1682764327419" duration="892000" />
+      <workItem from="1682764327419" duration="4355000" />
     </task>
     <servers />
   </component>

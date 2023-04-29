@@ -4,12 +4,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
 @NoArgsConstructor
-public class CommonVO {
+public class CommonVO implements Serializable {
     private Long regId;
     private LocalDateTime regDt;
     private Long modId;

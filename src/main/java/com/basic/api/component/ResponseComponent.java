@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ResponseComponent {
+
     public enum CommonResponse {
         SUCCESS(0, "성공하였습니다."), FAIL(-1, "실패하였습니다.");
         private final int code;
@@ -21,7 +22,7 @@ public class ResponseComponent {
         }
     }
 
-    public <T> ResponseVO<T> getResponseVO(T data, CommonResponse response) {
+    public <T> ResponseVO<T> getResponseVO(T data) {
         ResponseVO<T> result = new ResponseVO<T>();
         result.setData(data);
         result.setResult(true);
