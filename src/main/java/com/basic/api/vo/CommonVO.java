@@ -20,7 +20,7 @@ public class CommonVO implements Serializable {
     private String sortSubject;
     private String sortDescend;
     //현재 페이지
-    private int page;
+    private int page = 1;
     //페이지 사이즈
     private int pageSize = 10;
 }

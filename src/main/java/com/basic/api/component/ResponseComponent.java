@@ -7,7 +7,10 @@ import org.springframework.stereotype.Component;
 public class ResponseComponent {
 
     public enum CommonResponse {
-        SUCCESS(0, "성공하였습니다."), FAIL(-1, "실패하였습니다.");
+        OK(200, "OK"),
+        BAD_REQUEST(400, "BAD_REQUEST"),
+        NOT_FOUND(404, "NOT_FOUND"),
+        INTERNAL_SERER_ERROR(500, "INTERNAL_SERVER_ERROR");
         private final int code;
         private final String msg;
         CommonResponse(int code, String msg) {
@@ -22,12 +25,12 @@ public class ResponseComponent {
         }
     }
 
-    public <T> ResponseVO<T> getResponseVO(T data) {
+    public <T> ResponseVO<T> getResponseVO(T data, CommonResponse commonResponse) {
         ResponseVO<T> result = new ResponseVO<T>();
         result.setData(data);
         result.setResult(true);
-        result.setCode(CommonResponse.SUCCESS.getCode());
-        result.setMsg(CommonResponse.SUCCESS.getMsg());
+        result.setCode(commonResponse.getCode());
+        result.setMsg(commonResponse.getMsg());
         return result;
     }
 

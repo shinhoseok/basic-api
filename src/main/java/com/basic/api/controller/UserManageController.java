@@ -5,7 +5,7 @@ import com.basic.api.service.UserManageService;
 import com.basic.api.vo.UserVO;
 import com.basic.api.vo.response.ResponseVO;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,8 +19,16 @@ public class UserManageController {
     private final ResponseComponent responseComponent;
 
     @PostMapping("/admin/user/selectUserList")
-    public ResponseVO<Map> selectUserList(Pageable pageable, @RequestBody UserVO userVO) throws Exception {
-        Map<String, Object> rsltMap = userManageService.selectUserList(userVO, pageable);
-        return responseComponent.getResponseVO(rsltMap);
+    public ResponseVO<Map> selectUserList(@RequestBody UserVO userVO) throws Exception {
+        PageRequest pageRequest = PageRequest.of(userVO.getPage()-1, userVO.getPageSize());
+        Map<String, Object> rsltMap = userManageService.selectUserList(pageRequest, userVO);
+        return responseComponent.getResponseVO(rsltMap, ResponseComponent.CommonResponse.OK);
+    }
+
+    @PostMapping("/admin/user/insertUserProc")
+    public ResponseVO insertUserProc(@RequestBody UserVO userVO) throws Exception {
+        userVO.setRegId(1L);
+        userManageService.insertUserProc(userVO);
+        return responseComponent.getNoDataReponseVO(ResponseComponent.CommonResponse.OK);
     }
 }

@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "BASIC_USER")
@@ -34,6 +35,6 @@ public class UserEntity extends CommonEntity {
         this.addr = userVO.getAddr();
         this.emailAddr = userVO.getEmailAddr();
         super.regId = userVO.getRegId();
-        super.regDt = userVO.getRegDt();
+        super.regDt = LocalDateTime.now();
     }
 }

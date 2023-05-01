@@ -60,7 +60,7 @@ public class UserManageRepoImpl implements UserManageRepoCustom {
             if(userVO.getSearchCondition().equals("userNm")) {
                 return userEntity.userNm.like(userVO.getSearchKeyword());
             } else {
-                return userEntity.userId.like(userVO.getSearchKeyword());
+                return userEntity.emailAddr.like(userVO.getSearchKeyword());
             }
         } else {
             return null;

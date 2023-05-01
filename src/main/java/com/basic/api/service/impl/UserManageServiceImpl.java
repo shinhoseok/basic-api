@@ -18,7 +18,7 @@ import java.util.Map;
 public class UserManageServiceImpl implements UserManageService {
     private final UserManageRepo userManageRepo;
 
-    public Map<String, Object> selectUserList(UserVO userVO, Pageable pageable) throws Exception {
+    public Map<String, Object> selectUserList(Pageable pageable, UserVO userVO) throws Exception {
         Map<String, Object> rsltMap = new HashMap<>();
         Page<UserVO> userList = userManageRepo.selectUserList(userVO, pageable);
         rsltMap.put("userList", userList);
